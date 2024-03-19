@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Universal XSS</title>
+</head>
+<script defer>
+  document.title = "<img src/onerror=alert(1)>";
+</script>
+</html>

